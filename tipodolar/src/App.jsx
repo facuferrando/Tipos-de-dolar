@@ -33,7 +33,7 @@ function App() {
   }
   return (
     <>
-      <section className='flex flex-col gap-10 justify-start items-center bg-sky-200 '>
+      <section className='flex flex-col gap-10 justify-start items-center h-screen bg-sky-200 '>
         <p className='rounded-md p-2 text-white bg-emerald-600'>Bienvenido a la Calculadora de tipos de cambio del dólar</p>
         <div className='bg-white rounded-3xl flex w-3/4  justify-between'>
           <div className='w-1/2 flex flex-col'>
