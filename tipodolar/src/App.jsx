@@ -33,16 +33,16 @@ function App() {
   }
   return (
     <>
-      <section className='flex flex-col gap-10 justify-start items-center bg-sky-200 h-screen'>
-        <p className='rounded-md p-2 mt-24 text-white bg-emerald-600'>Bienvenido a la Calculadora de tipos de cambio del dólar</p>
-        <div className='bg-white rounded-3xl flex w-3/4 h-96 justify-between'>
+      <section className='flex flex-col gap-10 justify-start items-center bg-sky-200 '>
+        <p className='rounded-md p-2 text-white bg-emerald-600'>Bienvenido a la Calculadora de tipos de cambio del dólar</p>
+        <div className='bg-white rounded-3xl flex w-3/4  justify-between'>
           <div className='w-1/2 flex flex-col'>
-            <div className="p-4 h-1/2 rounded-xl flex flex-col">
+            <div className="p-4  rounded-xl flex flex-col">
               <div>
                 Ingrese el monto en <span className='text-green-600 text-xl p-2'>USD </span></div>
-              <input placeholder='$$$' className='border-2 border-emerald-600 rounded-xl w-1/2' onChange={handleChange} />
+              <input placeholder='$$$' type='number' className='border-2 border-emerald-600 rounded-xl w-1/2' onChange={handleChange} />
             </div>
-            <div className=" p-2 bg-emerald-100 flex flex-col h-1/2 rounded-xl">
+            <div className=" p-2 bg-emerald-100 flex flex-col  rounded-xl">
               <p className='p-2'> Tipos de dólar al día de hoy:</p>
               <div className='flex p-2 gap-10 flex-wrap'>
                 <div className='flex'>
@@ -60,7 +60,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="bg-emerald-600 p-8 rounded-xl h-full w-1/2 flex justify-end">
+          <div className="bg-emerald-600 p-8 rounded-xl w-1/2 flex justify-end">
             <div className='flex flex-col gap-8'>
               <p className='text-white p-2'>A dolar Oficial son: ${dolaresOficial}</p>
               <p className='text-white p-2'>A dolar Blue son: ${dolaresBlue}</p>
@@ -70,6 +70,8 @@ function App() {
           </div>
         </div>
       </section>
+
+
     </>
   )
 }
